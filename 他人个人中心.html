@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            width: 100%;
+            /*height: 45vh;*/
+            background: pink;
+            padding-bottom: 30px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .care{
+            margin: 10px 20px;
+            float: right;
+            border: 2px solid green;
+            border-radius: 15px;
+            color: green;
+            padding: 5px 20px;
+            clear: right;
+        }
+        .head div:first-child{
+            width: 5vh;
+            height: 5vh;
+            float: left;
+            background: white;
+        }
+        .tx, .name{
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            height: 15vh;
+            /*background: blue;*/
+            /*border-radius: 50%;*/
+        }
+        .name{
+            color: white;
+            font-size: 20px;
+            line-height: 10vh;
+            vertical-align: middle;
+            height: 10vh;
+        }
+        .tx img{
+            height: 100%;
+            border-radius: 50%;
+        }
+        .hr{
+          width: 80%;
+            margin-left: 10%;
+            height: 1px;
+            background: white;
+        }
+        .r{
+            margin-left: 10%;
+            border-right: 1px solid white;
+        }
+        .l{
+            margin-right: 10%;
+        }
+
+        .r,.l{
+            margin-top: 20px;
+            display: inline-block;
+            line-height: 5vh;
+            vertical-align: middle;
+            text-align: center;
+            height: 5vh;
+            /*background: burlywood;*/
+            width: calc(40% - 1px);
+            float: left;
+        }
+        .dongtai:nth-of-type(1){
+            margin-top: 10px;
+        }
+        .dongtai{
+          width: 100%;
+            margin-left: -10px;
+            padding: 10px;
+            overflow: hidden;
+            /*height: 20vh;*/
+            /*padding-right: 10px;*/
+            border-bottom: 1px solid #cccccc;
+            border-top: 1px solid #cccccc;
+        }
+        .left{
+            float: left;
+            width: 23%;
+            height: 15vh;
+            background: red;
+            margin-right: 10px;
+        }
+        .right{
+            float: left;
+            width: calc(75% - 10px);
+        }
+        .right span:nth-of-type(6n+1), .right span:nth-of-type(6n+3){
+            float: left;
+        }
+        .right span:nth-of-type(6n+3){
+            clear: left;
+        }
+        .right span:nth-of-type(6n+2){
+            margin-right: 5vw;
+            float: right;
+        }
+        .right div{
+            width: 100%;
+            /*height: 5vh;*/
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .right div img{
+            float: right;
+        }
+        .right span:nth-of-type(6n+5){
+            text-indent: 30px;
+            margin-left: 50px;
+            position: relative;
+        }
+        .right span:nth-of-type(6n+5)::after{
+            content: "";
+            display: inline-block;
+            background-image: url("img/pl.png");
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top:0;
+            left: -20px;
+        }
+        .right span:last-child{
+            display: inline-block;
+            float: right;
+            margin-right: 5vw;
+        }
+    </style>
+</head>
+<body>
+<div class="head" >
+    <div></div>
+    <div class="care">+关注</div>
+    <div class="tx"><img src="img/tx1.png"></div>
+    <div class="name">你咋不上天呢</div>
+    <div class="hr"></div>
+    <div class="r">关注 6</div>
+    <div class="l"> 粉丝  17</div>
+</div>
+<div style="padding-left: 10px;padding-right: 10px;">
+    我的动态     153
+
+    <div class="dongtai">
+        <div class="left"></div>
+        <div class="right">
+            <span>集萃杨书记</span>
+            <span>2016-3-23</span>
+            <span>命名阳光,懒洋洋的中午,炸几块鲜香...</span>
+            <div><img src="img/jiantou.png"></div>
+            <span>12人大三</span>
+            <span>写评论</span>
+            <span>分享</span>
+        </div>
+    </div>
+    <div class="dongtai">
+        <div class="left"></div>
+        <div class="right">
+            <span>集萃杨书记</span>
+            <span>2016-3-23</span>
+            <span>命名阳光,懒洋洋的中午,炸几块鲜香...</span>
+            <div><img src="img/jiantou.png"></div>
+            <span>12人大三</span>
+            <span>写评论</span>
+            <span>分享</span>
+        </div>
+    </div>
+    <div class="dongtai">
+        <div class="left"></div>
+        <div class="right">
+            <span>集萃杨书记</span>
+            <span>2016-3-23</span>
+            <span>命名阳光,懒洋洋的中午,炸几块鲜香...</span>
+            <div><img src="img/jiantou.png"></div>
+            <span>12人大三</span>
+            <span>写评论</span>
+            <span>分享</span>
+        </div>
+    </div>
+    <div class="dongtai">
+        <div class="left"></div>
+        <div class="right">
+            <span>集萃杨书记</span>
+            <span>2016-3-23</span>
+            <span>命名阳光,懒洋洋的中午,炸几块鲜香...</span>
+            <div><img src="img/jiantou.png"></div>
+            <span>12人大三</span>
+            <span>写评论</span>
+            <span>分享</span>
+        </div>
+    </div>
+    <div class="dongtai">
+        <div class="left"></div>
+        <div class="right">
+            <span>集萃杨书记</span>
+            <span>2016-3-23</span>
+            <span>命名阳光,懒洋洋的中午,炸几块鲜香...</span>
+            <div><img src="img/jiantou.png"></div>
+            <span>12人大三</span>
+            <span>写评论</span>
+            <span>分享</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

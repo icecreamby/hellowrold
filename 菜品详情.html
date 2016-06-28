@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .buy{
+            position: fixed;
+            bottom: 0;
+            height: 10vh;
+            width: 100%;
+        }
+        .buy span{
+            display: inline-block;
+            width: 50%;
+            float: left;
+            line-height: 10vh;
+            vertical-align: bottom;
+            text-align: center;
+            color: white;
+            background: red;
+        }
+        .buy span:first-child{
+            background: orange;
+        }
+        body > div:first-child{
+            color: white;
+            width: 100%;
+            display: inline-block;
+            line-height: 10vh;
+            background: #352B22;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .showp{
+            width: 100%;
+            height: 40vh;
+            /*overflow: hidden;*/
+            background: url("img/picture.png") no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+        }
+        .text{
+            font-size: 25px;
+            margin: 10px 20px 10px 20px;
+        }
+        .smoll{
+            font-size: 15px;
+            color: #cccccc;
+        }
+        .green{
+            width: 30vw;
+            display: inline-block;
+            text-align: center;
+            background: green;
+            color: white;
+            height: 5vh;
+            vertical-align: middle;
+            line-height: 5vh;
+            border-radius: 0 20px 20px 0;
+            margin-bottom: 10px;
+        }
+        .scroll{
+            background: rgb(181,179,175);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .scroll div{
+            display: inline-block;
+            text-align: center;
+            padding-top: 10px;
+            width: 30vw;
+            height: 15vh;
+            margin: 10px;
+            background: white no-repeat;
+            border-radius: 6px;
+
+            background-position: bottom;
+            background-size: 60%;
+        }
+        .ta , .taall{
+            width: 100%;
+            float: left;
+            -webkit-box-sizing: border-box;
+            border: 1px solid #cccccc;
+            display: inline-block;
+            height: 5vh;
+            line-height: 5vh;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .ta{
+            width: 50%;
+        }
+        .bz{
+            margin-top: 20px;
+            margin-left: 10px;
+            /*padding-top: 30px;*/
+            width: 100%;
+            height: 30vh;
+        }
+        .bz > div{
+            display: inline-block;
+            width: 70vw;
+            height: 100%;
+            background-size: 100%;
+            background-position: center;
+            vertical-align: top;
+            margin-right: 5vw;
+        }
+        .bz span{
+            display: inline-block;
+            width: 20vw;
+        }
+    </style>
+</head>
+<body>
+<div> 菜品详情</div>
+<div class="showp"></div>
+<div style="overflow: hidden">
+<div style="float: left" class="text">香煎杏鲍菇</div>
+<div style="float: right;" class="text">❤️❤️❤️❤️❤️</div>
+<div style="float: left;clear: left" class="text smoll">酱香口味  5分钟</div>
+
+<div style="float: right;clear: right" class="text smoll">305人浏览</div>
+</div>
+    <div>
+    <div class="green">菜单</div>
+    <div class="scroll">
+        <div style="background-image: url('img/p1.png')">杏鲍菇</div>
+        <div style="background-image: url('img/p2.png')">鲜葱</div>
+        <div style="background-image: url('img/p3.png')">玉米油</div>
+    </div>
+</div>
+<div >
+    <div class="green">攻略</div>
+   <div  style="overflow: hidden; margin-bottom: 30px;">
+       <span class="taall">主料</span>
+       <span class="ta">杏鲍菇(2个)</span>
+       <span class="taall"> 辅料</span>
+       <span class="ta">鲜葱(1颗)</span>
+       <span class="ta">山辣酱(45毫升)</span>
+       <span class="ta">玉米油</span><span class="ta"></span>
+   </div>
+    <div style="margin-bottom: 10vh;">
+        <div class="bz">
+            <div style="background-image: url('img/x1.png')"></div>
+
+            <span>杏跑菇洗净,试干水分,切片;尽量厚薄均匀;再切点葱花;</span>
+        </div>
+        <div class="bz">
+            <div style="background-image: url('img/x1.png')"></div>
+
+            <span>杏跑菇洗净,试干水分,切片;尽量厚薄均匀;再切点葱花;</span>
+        </div>
+        <div class="bz">
+            <div style="background-image: url('img/x1.png')"></div>
+
+            <span>杏跑菇洗净,试干水分,切片;尽量厚薄均匀;再切点葱花;</span>
+        </div>
+        <div class="bz">
+            <div style="background-image: url('img/x1.png')"></div>
+
+            <span>杏跑菇洗净,试干水分,切片;尽量厚薄均匀;再切点葱花;</span>
+        </div>
+        <div class="bz">
+            <div style="background-image: url('img/x1.png')"></div>
+
+            <span>杏跑菇洗净,试干水分,切片;尽量厚薄均匀;再切点葱花;</span>
+        </div>
+        <div class="bz">
+            <div style="background-image: url('img/x1.png')"></div>
+
+            <span>杏跑菇洗净,试干水分,切片;尽量厚薄均匀;再切点葱花;</span>
+        </div>
+        <div class="bz">
+            <div style="background-image: url('img/x1.png')"></div>
+
+            <span>杏跑菇洗净,试干水分,切片;尽量厚薄均匀;再切点葱花;</span>
+        </div>
+        <div class="bz">
+            <div style="background-image: url('img/x1.png')"></div>
+
+            <span>杏跑菇洗净,试干水分,切片;尽量厚薄均匀;再切点葱花;</span>
+        </div>
+    </div>
+</div>
+<div class="buy">
+    <span>加入购物车</span>
+    <span>立即购买</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+
+        .head {
+            padding-top: .4em;
+            padding-bottom: .4em;
+            float: left;
+            width: 100%;
+            background: url("img/导航栏.png") ;
+            height: 5vh;
+            position: relative;
+            /*display: inline-block;*/
+            /*line-height: 5vh;*/
+            /*vertical-align: middle;*/
+            
+        }
+        #shousuo{
+            width: 50%;
+            height: 100% ;
+            margin:  auto ;
+            margin-top: -5px;
+            background: no-repeat;
+            background-image: url("img/搜索.png");
+            background-size: 100%;
+            background-position: center  ;
+            position: absolute;
+            left: 0;
+            right: 0;
+            font-size: 15px;
+        }
+        #shousuo::after{
+            display: block;
+            background: no-repeat;
+            background-image: url("img/放大境.png");
+            width: 10%;
+            height: 100%;
+            content: "";
+            background-position: center;
+            background-size: 90%;
+            position: absolute;
+            /*top:-15%;*/
+            top:0;
+        }
+
+        #xiaoxi{
+            width: 5%;
+            height: 100%;
+            float: right;
+
+            margin-right: 5%;
+            background: url("img/消息.png")no-repeat;
+            background-position: center;
+            background-size: 90%;
+
+        }
+        #dizhi{
+            display: inline-block;
+            float: left;
+            width:10%;
+            height: 120%;
+            margin-left: 8%;
+            line-height: 6vh;
+            vertical-align: middle;
+            /*background: red;*/
+            position: relative;
+            margin-right: 10%;
+
+        }
+        #dizhi span{
+            float: right;
+            /*display: inline-block;*/
+            /*height: 100%;*/
+            /*font-size: 1em;*/
+            /*line-height: 100%;*/
+            /*vertical-align: middle;*/
+
+            color: white;
+        }
+        #dizhi::after{
+            position: absolute;
+            left:110%;
+            top:40%;
+            content: "";
+            display: block;
+            width: 20%;
+            height: 20%;
+            /*width: auto;*/
+            /*height: auto;*/
+            /*background-size: 100%;*/
+            background-position: center;
+            background: no-repeat;
+            background-image: url("img/下箭头.png");
+            background-size: 90%;
+        }
+.lunbo{
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+    background-color: antiquewhite;
+    position: relative;
+}
+        .lunbo1{
+            position: absolute;
+            width: 300%;
+            height: 100%;
+            overflow: hidden;
+
+        }
+        .lunbo1 div{
+            float: left;
+            width: 100vw;
+            height: 100%;
+            outline: 1px solid blue;
+        }
+        .lunbo ul{
+            display: flex;
+            width: 50px;
+            height: 10px;
+            position: absolute;
+            /*top:10px;*/
+            margin:  0 auto;
+            left: 0;
+            right: 0;
+            z-index: 40;
+            bottom: 10px;
+            /*justify-content: center;*/
+            align-items: center;
+        }
+        .lunbo li{
+            display: block;
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+
+            background-color: white;
+        }
+        .lunbo li:nth-of-type(3n+2){
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .qg{
+            width: 100vw;
+            height: 35%;
+            margin-top: 10px;
+            -webkit-box-sizing: border-box;
+            background-color: white;
+            padding: 2vw;
+            padding-right: 0px;
+        }
+        .qg > div:not(:first-child){
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            float: left;
+            width: 48%;
+            height: 80%;
+            color: #666666;
+            /*margin-right: 1px;*/
+            /*background-color: antiquewhite;*/
+            overflow: hidden;
+
+        }
+        .time{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            width: 5vw;
+            height: 5vw;
+            margin-right: 2vw;
+            background-color: black;
+            border-radius: 5px;
+            position: relative;
+            color: white;
+        }
+        .times::after{
+            display: block;
+            position: absolute;
+            top:0;
+            /*top:1vw;*/
+            right: -1.5vw;
+            /*width: 2vw;*/
+            /*height: 2vw;*/
+            /*background-color: red;*/
+            color: black;
+            content: ":";
+        }
+        .caip{
+            height: 40%;
+            width: 100%;
+            background-color: white;
+            margin-top: 15px;
+            margin-bottom: 40%;
+
+        }
+        .caip >div{
+            width: 100%;
+        }
+
+        .caip > div:first-child{
+            display: inline-block;
+
+            line-height: 60px;
+            vertical-align: middle;
+            overflow: hidden;
+            height: 60px;
+            font-size: 20px;
+            /*border: 1px solid red;*/
+        }
+        .caip > div:first-child > span:first-child{
+            margin-left: 20px;
+            float: left;
+            width: auto;
+
+            color: green;
+        }
+        .caip > div:first-child >span:last-child{
+            float: right;
+            margin-right: 20px;
+            width: auto;
+            height: 100%;
+            color: #666666;
+        }
+        .caip >div:last-child >div{
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+        }
+        .caip >div:last-child >div span{
+            display: block;
+            color: white;
+        }
+       #righttop{
+           float: right;
+           width: 60%;
+           height: 100px;
+           /*background: linear-gradient(black 50%,transparent 100%);*/
+           background-image: linear-gradient(rgba(0,0,0,.7) 8%,transparent 100%),url("img/xnyt.png");
+           background-position: center;
+       }
+        #rightr{
+            float: right;
+            clear: right;
+            width: 30%;
+            height: 100px;
+            background-image: linear-gradient(rgba(0,0,0,.7) 8%,transparent 100%),url("img/nrw.png");
+            background-position: center;
+        }
+        #rightl{
+            float: right;
+            width: 30%;
+            height: 100px;
+            background-image: linear-gradient(rgba(0,0,0,.7) 8%,transparent 100%),url("img/niur.png");
+            background-position: center;
+        }
+        #left{
+            float: left;
+            width: 40%;
+            height: 200px;
+            background-position: center;
+            background-image:linear-gradient(rgba(0,0,0,.7) 8%,transparent 100%), url("img/mlniupai.png");
+        }
+
+    </style>
+</head>
+<body>
+<div class="head">
+<div id="dizhi"><span>北京</span></div>
+    <div id="shousuo">
+
+        <input placeholder="搜索食材很菜品" type="text" class="searchinput">
+    </div>
+    <div id="xiaoxi">
+
+    </div>
+
+</div>
+<div class="lunbo">
+    <ul id="lb">
+        <li value="0"></li>
+        <li value="1"></li>
+        <li value="2"></li>
+    </ul>
+    <div class="lunbo1">
+     <div style="background-color: blue">1</div>
+    <div style="background-color: red" >2</div>
+    <div style="background-color: aqua">2</div>
+        </div>
+</div>
+<div class="qg">
+    <div>兔抢购</div>
+    <div style="margin-right: 1%;">
+        精选延庆胡萝卜
+        <div style="overflow: hidden;margin-bottom: 10px;">
+            <div style="float: left">
+                <div class="time times">01</div>
+                <div class="time times">22</div>
+                <div class="time">02</div>
+            </div>
+            <div style="float: right;color: red;font-size: 20px;">$4.20</div>
+        </div>
+        <img src="img/tup.png" style="width: 100%;height: 100%;">
+    </div>
+    <div>
+        精选延庆胡萝卜
+        <div style="overflow: hidden;margin-bottom: 10px;">
+            <div style="float: left">
+                <div class="time times">1</div>
+                <div class="time times">2</div>
+                <div class="time">2</div>
+            </div>
+            <div style="float: right;color: red;font-size: 20px;">$4.20</div>
+        </div>
+        <img src="img/tup2.png" style="width: 100%">
+    </div>
+</div>
+<div class="caip">
+    <div>
+        <span>菜品精选</span>
+        <span>查看更多</span>
+    </div>
+    <div>
+        <div id="righttop">
+            <span>香嫩樱桃派</span>
+            <span>$23</span>
+        </div>
+
+        <div id="left">
+           <span>麻辣牛肉排</span>
+            <span>$23</span>
+        </div>
+        <div id="rightr">
+            <span>牛肉芝士丸</span>
+            <span>$23</span>
+        </div>
+        <div id="rightl">
+            <span>白菜牛肉面</span>
+            <span>$23</span>
+        </div>
+
+    </div>
+</div>
+<div class="foot">
+    <div>
+    <div style="background-image: url('img/主页.png')"></div></div>
+    <div><div style="background-image: url('img/商场.png')"></div></div>
+    <div><div style="background-image: url('img/发现.png')"></div></div>
+    <div><div style="background-image: url('img/选菜.png')"></div></div>
+    <div><div style="background-image: url('img/我的.png')"></div></div>
+</div>
+<script>
+    var luni=0;
+    var lunbodiv=document.getElementsByClassName("lunbo1").item(0).childNodes.item(1);
+    var lw=lunbodiv.offsetWidth;
+setInterval(function () {
+    if(luni>3){
+        luni=0;
+    }
+    document.getElementsByClassName("lunbo1").item(0).style.left=-(luni*lw)+"px";
+
+    luni++;
+},1000);
+    var lb=document.getElementById("lb").childNodes;
+    for(var i=0;i<lb.length;i++){
+        if(lb.item(i).nodeName=="LI")
+        {
+            lb.item(i).onclick=function () {
+                console.log(this.value);
+                document.getElementsByClassName("lunbo1").item(0).style.left=-(this.value*lw)+"px";
+            }
+
+        }
+    }
+
+//    document.getElementsByClassName("lunbo1").item(0).style.left=-screen.width+"px";
+//    console.log(document.getElementsByClassName("lunbo1").item(0).style.left);
+</script>
+</body>
+</html>

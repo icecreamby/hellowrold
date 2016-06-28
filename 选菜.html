@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <title>Title</title>
+    <style>
+        .head{
+            -webkit-box-sizing: border-box;
+
+            height: 7vh;
+            width: 100%;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            overflow: hidden;
+            background-color: #352B22;
+            position: relative;
+        }
+        .head > div:first-child{
+            float: left;
+            position: relative;
+            background:no-repeat;
+            background-image: url("img/搜索.png") ;
+            background-size: 100%;
+            background-position: center;
+            width: 50vw;
+            height: 100%;
+
+        }
+        .head > div:first-child::after{
+            display: block;
+            background: no-repeat;
+            background-image: url("img/放大境.png");
+            width: 10%;
+            height: 100%;
+            content: "";
+            background-position: center;
+            background-size: 90%;
+            position: absolute;
+            /*top:-15%;*/
+            top:0;
+        }
+        .head >div:last-child{
+            width: 5vw;
+            /*height: 100%;*/
+            height: 16px;
+           position: absolute;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            right: 4vw;
+            /*left: 0;*/
+            /*float: right;*/
+
+        }
+        .head >div:last-child span{
+            display: block;
+            width: 5vw;
+            height: 2px;
+            margin-bottom: 5px;
+            background: white;
+            border-radius: 4px;
+        }
+        .dacai{
+            padding-left: 4vw;
+            padding-right: 4vw;
+            column-count: 3;
+        }
+        .dacai > div{
+            margin-top: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            width: 100%;
+            background: white;
+        }
+        .dacai img{
+            width: 100%;
+        }
+        .dacai span{
+            width: 100%;
+            display: inline-block;
+            height: 6vw;
+            line-height: 6vw;
+            vertical-align: middle;
+            text-align: center;
+            border-bottom: 1px solid #666666;
+        }
+        .xuan{
+            /*width: 100%;*/
+            height: 20vh;
+            -webkit-box-sizing: border-box;
+            padding-top: 1.5vh;
+            padding-bottom: 3vh;
+            padding-left: 5vw;
+            background: rgb(181,179,175);
+        }
+        .xuan > div{
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+        }
+        .xuan > div::after{
+            position: absolute;
+         top:-10px;
+            right: -10px;
+            /*float: right;*/
+            display: block;
+            content: "";
+            background: url("img/qx.png");
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+        }
+        .xuan img{
+            height: 15vh;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <div><input type="text"class="searchinput"></div>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div>
+    <div class="xuan">
+       <div> <img src="img/xuan1.png"></div>
+       <div> <img src="img/xuan2.png"></div>
+       <div><img src="img/xuan3.png"></div>
+    </div>
+    <div class="dacai">
+        <div>
+            <span>樱桃番茄</span>
+            <img src="img/cai1.png">
+        </div>
+        <div>
+            <span>笋</span>
+            <img src="img/cai2.png">
+        </div>
+        <div>
+            <span>小白菜</span>
+            <img src="img/cai3.png">
+        </div>
+        <div>
+            <span>胡萝卜</span>
+            <img src="img/xaun4.png">
+        </div>
+        <div>
+            <span>紫薯</span>
+            <img src="img/xaun5.png">
+        </div>
+        <div>
+            <span>西芹</span>
+            <img src="img/xuan6.png">
+        </div>
+        <div>
+            <span>玉米</span>
+            <img src="img/xuan7.png">
+        </div>
+        <div>
+            <span>平菇</span>
+            <img src="img/xuan8.png">
+        </div>
+        <div>
+            <span>辣椒</span>
+            <img src="img/xuan9.png">
+        </div>
+    </div>
+</div>
+<div class="foot">
+    <div><div style="background-image: url('img/主页.png')"></div></div>
+    <div><div style="background-image: url('img/商场.png')"></div></div>
+    <div><div style="background-image: url('img/发现.png')"></div></div>
+    <div><div style="background-image: url('img/选菜.png')"></div></div>
+    <div><div style="background-image: url('img/我的.png')"></div></div>
+</div>
+</body>
+</html>

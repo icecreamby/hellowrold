@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <style>
+        .head{
+            width: 100%;
+            /*height: 40vh;*/
+            background: palegoldenrod;
+            padding-bottom: 10px;
+        }
+        .center{
+            padding-bottom: 15vh;
+            margin-top:10px;
+        }
+        .iteam{
+            background: white no-repeat;
+            -webkit-box-sizing: border-box;
+            width: 100%;
+            padding: 2vw 5vw;
+            background-image: url("img/jiantou.png");
+            background-position: 90% center;
+            border-bottom: 1px solid #cccccc;
+        }
+        .iteam img{
+            width: 5vw;
+            height: 5vw;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .head img{
+            width: 20vw;
+            height: 20vw;
+            margin-top: 7vh;
+            margin-left: 40vw;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .name{
+            display: inline-block;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            line-height: 7vh;
+            color: white;
+            /*border-radius: 5px;*/
+            /*border: 2px solid green;*/
+        }
+        .name span{
+            border-radius: 5px;
+            border: 2px solid green;
+            padding: 1vw 5vw;
+        }
+        .message{
+            width: 80vw;
+            margin-left: 10vw;
+            border-top:1px solid white;
+            overflow: hidden;
+        }
+        .left2,.left3{
+            position: relative;
+            background: transparent;
+            /*background: yellow;*/
+            line-height: 8vh;
+            height: 8vh;
+            text-align: center;
+            vertical-align: middle;
+            float: left;
+            border: 0px ;
+            text-align: center;
+            /*color: transparent;*/
+            /*-webkit-border-image: -webkit-linear-gradient(transparent 0%,white 30%,white 90%,transparent 100%) 0 100%;*/
+            /*border-image-width: 1px;*/
+            /*border-right: 1px ;*/
+        }
+        .left2:nth-of-type(1)::after,.left3:nth-of-type(3n+1)::after,.left3:nth-of-type(3n)::after{
+            position: absolute;
+            top:10%;
+            right: 0;
+            content: "";
+            display: block;
+            width: 1px;
+            height: 80%;
+            background: white;
+        }
+        .rightb{
+            border-right: 0px;
+        }
+        .left3{
+            width: 33%;
+        }
+        .left2{
+            width: calc(50% - 4px);
+            border-bottom: 1px solid white;
+
+        }
+        .dd{
+            background: white;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #cccccc;
+        }
+        .dd > div{
+            margin-top: 10px;
+            /*display: flex;*/
+            width: 20vw;
+            /*height: 15vh;*/
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .dd img{
+            margin-left: 7.5vw;
+            width: 5vw;
+            height: 5vw;
+            margin-right: 7.5vw;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+     <img src="img/tx2.png">
+    <span class="name"><span>登录</span></span>
+    <div class="message">
+        <div class="left2">关注 6</div>
+        <div class="left2 rightb"> 粉丝17</div>
+        <div class="left3"> 收藏 5</div>
+        <div class="left3"> 消息 39</div>
+        <div class="left3 rightb">可积分 15</div>
+    </div>
+</div>
+<div class="center">
+    <div class="iteam">全部订单</div>
+    <div class="dd">
+        <div><img src="img/fuk.png">待付款</div>
+        <div><img src="img/fahuo.png">待付款</div>
+        <div><img src="img/shuohuo.png">待付款</div>
+        <div><img src="img/pjia.png">待付款</div>
+    </div>
+    <div class="iteam"><img src="img/w1.png">我的购物车</div>
+    <div class="iteam"><img src="img/w2.png">我的会员</div>
+    <div class="iteam"><img src="img/w3.png">客服热线</div>
+    <div class="iteam"><img src="img/w4.png">我的上传</div>
+    <div class="iteam"><img src="img/w5.png">我的设置</div>
+
+</div>
+<div class="foot">
+    <div>
+        <div style="background-image: url('img/主页.png')"></div></div>
+    <div><div style="background-image: url('img/商场.png')"></div></div>
+    <div><div style="background-image: url('img/发现.png')"></div></div>
+    <div><div style="background-image: url('img/选菜.png')"></div></div>
+    <div><div style="background-image: url('img/我的.png')"></div></div>
+</div>
+</body>
+</html>

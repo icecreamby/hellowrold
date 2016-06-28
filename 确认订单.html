@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #cccccc;
+        }
+        .head{
+            width: 100%;
+            height: 7vh;
+            background: #352B22;
+            vertical-align: 7vh;
+            line-height: 7vh;
+            color: white;
+            text-align: center;
+        }
+        .head2{
+            /*background: white;*/
+            background: #cccccc;
+            padding-top: 10vh;
+            padding-left: 7vw;
+            padding-right: 5vw;
+            padding-bottom: 5vh;
+            overflow: hidden;
+        }
+        .name,.photo,.diz{
+            float: left;
+            margin-right: 2vw;
+            margin-bottom: 10px;
+        }
+        .diz{
+            clear: left;
+        }
+        .right{
+            float: right;
+        }
+        .main{
+            position: relative;
+            background: white;
+            /*background: green;*/
+            /*width: 100%;*/
+        padding-left: 5vw;
+            padding-top: 1vh;
+            /*height: 20vh;*/
+            border-bottom: 1px solid #cccccc;
+            overflow: hidden;
+        }
+        .huo{
+            float: left;
+            width: 15vw;
+            height: 100%;
+            font-size: 8px;
+            margin-right: 1vw;
+
+        }
+        .huo img{
+            width: 15vw;
+            height: 15vh;
+            margin-bottom: .5vh;
+        }
+        .huo p{
+            margin-bottom: .5vh;
+        }
+         .main span{
+             float: right;
+         }
+        .red{
+            color: red;
+        }
+        .main span{
+            margin-right: 10vw;
+            display: inline-block;
+            /*height: 100%;*/
+            line-height: 18.5vh;
+            vertical-align: middle;
+        }
+        .spanright{
+            position: relative;
+            background: white;
+            overflow: hidden;
+            padding:1vh 0 1vh 5vw;
+            border-bottom: 1px solid #cccccc;
+        }
+        .spanright span{
+           float: right;
+            clear: right;
+            display: inline-block;
+            height: 20px;
+            margin-bottom: 9px;
+            margin-right: 10vw;
+        }
+        .spanright::after,.main::after{
+            margin: auto;
+            top:0;
+            bottom: 0;
+            right: 3vw;
+            position: absolute;
+            display: block;
+            content: "";
+            background: no-repeat;
+            background-image: url("img/jiantou.png");
+            width: 15px;
+            height: 20px;
+            background-size: 50%;
+        }
+        .marginbottom{
+            margin-bottom: 3vh;
+        }
+        .foot{
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            line-height: 7vh;
+            vertical-align: middle;
+            text-align: center;
+            color: white;
+        }
+        .foot div:first-child{
+            width: 70vw;
+            float: left;
+            background: #352B22;
+            opacity: 0.9;
+        }
+        .foot div:last-child{
+            background: red;
+        }
+        .bottom{
+            margin-bottom: 7vh;
+        }
+    </style>
+</head>
+<body>
+<div class="head"> 确认订单</div>
+<div class="head2">
+    <span class="name">落小黑</span>
+    <span class="photo">12324354543</span>
+    <span class="diz">北京大兴区新女难得放假的内裤</span>
+    <span class="right"> > </span>
+</div>
+<div class="main">
+    <div class="huo">
+        <img src="img/p1.png">
+        <p>适当放松你的是你的</p>
+        <p class="red">$21.00</p>
+    </div>
+    <div class="huo">
+        <img src="img/p1.png">
+        <p>适当放松你的是你的</p>
+        <p class="red">$21.00</p>
+    </div>
+    <div class="huo">
+        <img src="img/p1.png">
+        <p>适当放松你的是你的</p>
+        <p class="red">$21.00</p>
+    </div>
+    <div class="huo">
+        <img src="img/p1.png">
+        <p>适当放松你的是你的</p>
+        <p class="red">$21.00</p>
+    </div>
+    <span>共3件</span>
+</div>
+<div class="spanright">支付配送
+ <span> 支付方式</span>
+    <span>快递方式</span>
+    <span>工作日,双休日与假日均可送货</span>
+</div>
+<div class="spanright marginbottom">发票信息
+<span>明细(纸质)一个人</span>
+</div>
+<div class="spanright">优惠券
+<span>无可用</span>
+</div>
+<div class="spanright"> 积分兑换
+<span>无可用</span>
+</div>
+<div class="spanright">商品金额
+<span>$16.80</span>
+</div>
+<div class="spanright bottom">运费
+<span>$0.00</span>
+</div>
+<div class="foot">
+    <div>合计$16.80</div>
+    <div>立即下单</div>
+</div>
+</body>
+</html>

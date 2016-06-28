@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            width: 100%;
+            height: 10vh;
+            text-align: center;
+            vertical-align: middle;
+            color: white;
+            background: #352B22;
+            line-height: 10vh;
+        }
+        .tx{
+            width: 100%;
+            height:25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tx img{
+            width: 15vw;
+            height: 15vw;
+            border-radius: 10px;
+
+        }
+        input[type='text'],input[type='password']{
+            margin-bottom: 10px;
+            line-height: 5vh;
+            border: 0;
+            border-bottom: 1px solid #666666;
+            outline: 0;
+            width: 80vw;
+            margin-left: 10vw;
+        }
+        input[type='submit']{
+            margin-top: 5vh;
+            line-height: 4vh;
+            border: 0;
+            width: 80vw;
+            margin-left: 10vw;
+            border-radius: 10px;
+            background: #352B22;
+            color: white;
+        }
+        .dl{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .dl img{
+            width: 6vw;
+            height: 6vw;
+           margin-right: 5vw;
+        }
+        .bottoml{
+            position: absolute;
+            bottom: 2vh;
+            left: 2vw;
+        }
+        .bottomr{
+            position: absolute;
+            bottom: 2vh;
+            right: 2vw;
+        }
+    </style>
+</head>
+<body>
+<div class="head"></div>
+<div class="tx"><img src="img/tx2.png"></div>
+<input type="text" placeholder="用户名/邮箱/手机号">
+<input type="password">
+<input type="submit">
+<div class="dl">
+    其他登录方式:
+   <div >
+       <img src="img/qq.png" alt=""><img src="img/wx.png" alt=""><img src="img/xl.png" alt=""><img src="img/bd.png" alt="">
+   </div>
+</div>
+<div  class="bottoml"> 忘记密码</div>
+<div class="bottomr"> 新用户注册</div>
+</body>
+</html>
